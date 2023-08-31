@@ -61,7 +61,7 @@ app.put('/api/notes/:id', (req, res) => {
     notes[noteIndex] = {
       id,
       content,
-      important,
+      important
     };
     res.json(notes[noteIndex]);
   } else {
@@ -72,10 +72,13 @@ app.put('/api/notes/:id', (req, res) => {
 app.patch('/api/notes/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const { content, important } = req.body;
+  //const updatedInfo = JSON.parse(JSON.stringify({ content, important })); // omit undefined value
   const noteIndex = notes.findIndex((note) => note.id === id);
 
   if (noteIndex !== -1) {
-    const updatedNote = { ...notes[noteIndex], content, important };
+    //const updatedNote = { ...notes[noteIndex], content, important }; // original code
+    //const updatedNote = { ...notes[noteIndex], ...updatedInfo};
+    const updatedNote = { ...notes[noteIndex], ...JSON.parse(JSON.stringify({ content, important })) }; // one-liner
     notes[noteIndex] = updatedNote;
     res.json(updatedNote);
   } else {
