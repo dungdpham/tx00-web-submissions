@@ -4,7 +4,7 @@ const message = `Hello, my name is ${myname}.`;
 console.log(message);
 
 
-// Part 2:JSON vs JavaScript Objects 
+// Part 2: JSON vs JavaScript Objects 
 const person = { name: "John", age: 25, email: "john@example.com"};
 const jsonPerson = JSON.stringify(person);
 console.log(jsonPerson);
