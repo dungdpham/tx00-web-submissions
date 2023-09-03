@@ -21,8 +21,7 @@ console.log('Total Memory:', totalMemory, 'bytes');
 const freeMemory = os.freemem();
 console.log('Free Memory:', freeMemory, 'bytes');
 
+
 console.log('CPU:', os.cpus()[1].model);
-
 console.log('Network Interface:', Object.keys(os.networkInterfaces()));
-
 console.log('User Info:', os.userInfo().username);
