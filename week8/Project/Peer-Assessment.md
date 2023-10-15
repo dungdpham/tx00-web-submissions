@@ -36,7 +36,7 @@
 - Members: Keti Mandunga, Akseli Kaarre, Miro Saarinen & Jesper Selenius
 - Nice original idea, at least among peers within this course. I like the project idea and the website layout. They surely knew what functions to include in a marketplace type of website. Put a lot of emphasis to ensure the webapp works on mobile devices as well.
 
-## Group 5, Weather App
+## Group 5 - Weather App
 
 - Grade: 5
 - Members: Antti Kukkonen, Iikka Malmi, Jommi Koljonen, Taavi Nätynki
